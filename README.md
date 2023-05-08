@@ -423,5 +423,5 @@ spec:
         url: http://flagger-loadtester.test/
         timeout: 5s
         metadata:
-          cmd: "hey -z 1m -q 10 -c 2 http://app.example.com/"
+          cmd: "hey -z 1m -q 10 -c 2 -host 'app.example.com' 'http://ingress-nginx-controller.ingress-nginx'"
 ```
